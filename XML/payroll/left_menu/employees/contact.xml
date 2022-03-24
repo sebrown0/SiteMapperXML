@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MenuItem 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="MenuItem file:/C:/SiteMapperXML/Schema/menu/MenuItem.xsd"
+  
+  xmlns:mit="MenuItemType"
+  xmlns:cnt="Container"
+  xmlns:elm="ElementType"
+  xmlns:txt="Text"
+  xmlns:din="TestDataIn"
+  xmlns:dout="TestDataOut"
+  xmlns="Menu"
+    
+  name="Contact Numbers" package="Employees" class="ContactNumbers">  
+
+  <mit:Type name="JsPanelWithIFrame">
+    <mit:JsPanelWithIFrame panelTitle="Employee Contact Details"/>
+  </mit:Type>
+  <mit:Container type="TODO" name="HeaderElements">
+    <cnt:Container type="InputGroup" name="EmpLookup">
+      <cnt:Locator by="css" text="div[class='input-group']"/>
+      <cnt:Element>
+        <elm:Details type="TextOut" name="FormID" text=""/>
+        <elm:Locator by="id" text="FORM_ID"/>
+        <elm:TestDataIn insertWith="EmployeeLookupByName">         
+          <din:Text value="Borg"/>
+        </elm:TestDataIn>
+        <elm:TestDataOut>
+          <dout:Text value="0123456M"/>
+        </elm:TestDataOut>
+        <elm:Function isDefaultPass="true" type="element"/>
+      </cnt:Element>
+    </cnt:Container>
+  </mit:Container>
+</MenuItem>

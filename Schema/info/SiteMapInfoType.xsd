@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="SiteMapInfo"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  xmlns:mth="CreationMethodEnum"
+  >
+  
+  <xs:import
+    schemaLocation="CreationMethodEnum.xsd"    
+    namespace="CreationMethodEnum"
+  />
+  
+  <xs:complexType name = "SiteMapInfoType">
+    <xs:sequence>              
+      <xs:element name="Author" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Version" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="CreationMethod" type="mth:CreationMethod" minOccurs="1" maxOccurs="1" />
+      <xs:element name="RootDir" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ParentPackage" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ElementLibrary" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+    
+</xs:schema>

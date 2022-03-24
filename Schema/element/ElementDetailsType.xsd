@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="ElementDetails"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"      
+  xmlns:typ="ElementEnumType"
+  >
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementTypeEnum.xsd"  
+    namespace="ElementEnumType" />
+  
+  <xs:complexType name="ElementDetailsType">
+    <xs:attribute name="type" type="typ:ElementTypeEnum" use="required" />
+    <xs:attribute name="name" type="xs:string" use="required" />    
+    <xs:attribute name="text" type="xs:string" use="optional" />
+    <xs:attribute name="fafa" type="xs:string" use="optional" />   
+  </xs:complexType>
+</xs:schema>

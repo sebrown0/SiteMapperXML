@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="FunctionSubtypeEnum"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"  
+  xmlns:t="ElementEnumType"
+  xmlns:n="EnumNone"            
+ >
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementTypeEnum.xsd"  
+    namespace="ElementEnumType" />
+    
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/common/EnumNone.xsd"  
+    namespace="EnumNone" />
+      
+  <xs:simpleType name="FuncSubtypeEnum">
+    <xs:union memberTypes="t:ElementTypeEnum n:EnumNoneType" />
+  </xs:simpleType>
+  
+</xs:schema> 

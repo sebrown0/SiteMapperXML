@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<SiteMap 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Root file:/C:/SiteMapperXML/Schema/main/SiteMap.xsd"
+  xmlns="Root"
+  
+  xmlns:inf="SiteMapInfo"
+  xmlns:inc="IncludeElementsInTest"
+  xmlns:el="Element"
+  xmlns:itm="MenuItem"
+  xmlns:itmType="MenuItemType"
+  xmlns:cnt="Container"
+  xmlns:fun="Function"
+  xmlns:din="TestDataIn"
+  xmlns:dout="TestDataOut"
+  xmlns:menus="Menus"
+  xmlns:menu="Menu"
+  xmlns:mod="Module"
+  xmlns:mods="Modules"                
+  >
+  
+  <Info>
+    <inf:Author>SteveBrown</inf:Author>
+    <inf:Version>1.0.0</inf:Version>
+    <inf:CreationMethod>IgnoreExisting</inf:CreationMethod>
+    <inf:RootDir>C:/Users/SteveBrown/eclipse-workspace/2021/DTest/src/main/java</inf:RootDir>
+    <inf:ParentPackage>object_models/modules</inf:ParentPackage>
+    <inf:ElementLibrary>C:/Users/SteveBrown/eclipse-workspace/2021/DTest</inf:ElementLibrary>
+  </Info>
+  
+  <IncludeElementsForTest>
+    <inc:Include>Button</inc:Include>
+    <inc:Include>TextSelect</inc:Include>
+    <inc:Include>TextOut</inc:Include>
+    <inc:Include>ComboSelectOnly</inc:Include>    
+    <inc:Include>Label</inc:Include>
+  </IncludeElementsForTest>
+  
+  <Modules>
+    <mods:Module name="payroll">
+      <mod:Menus>        
+        <menus:Menu name="Left" package="left_menu">        
+          
+         
+          <!-- 
+          <menu:MenuItem name="" package="" class="">
+            <itm:Type name="">
+              <itm:JsPanelWithIFrame panelTitle=""/>
+            </itm:Type>
+          </menu:MenuItem>
+          -->
+          <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/contact.xml" />
+ 
+          
+          
+        </menus:Menu>
+      </mod:Menus>
+    </mods:Module>
+  </Modules>
+</SiteMap>

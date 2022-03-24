@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="Root"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  xmlns:inf="SiteMapInfo"
+  xmlns:inc="IncludeElementsInTest"  
+  xmlns:mods="Modules"  
+  >
+    
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/info/SiteMapInfoType.xsd" 
+    namespace="SiteMapInfo"/>
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/info/IncludeElementsForTestType.xsd" 
+    namespace="IncludeElementsInTest"/>
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/module/ModulesType.xsd" 
+    namespace="Modules"/>
+         
+  <xs:element name="SiteMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Info" type="inf:SiteMapInfoType" />         
+        <xs:element name="IncludeElementsForTest" type="inc:IncludeElementsForTestType" />
+        <xs:element name="Modules" type="mods:ModulesType" />
+      </xs:sequence>
+    </xs:complexType>  
+  </xs:element>  
+</xs:schema>

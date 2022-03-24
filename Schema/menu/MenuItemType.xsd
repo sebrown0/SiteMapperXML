@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+  targetNamespace="MenuItemType" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" xmlns:cnt="Container">
+  
+  <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
+    namespace="http://www.w3.org/XML/1998/namespace"/>
+
+  <xs:import schemaLocation="file:/C:/SiteMapperXML/Schema/container/ContainerType.xsd"
+    namespace="Container"/>
+
+  <xs:complexType name="MenuItemType">
+    <xs:sequence>
+      <xs:element name="Type" minOccurs="1" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="JsPanelWithIFrame">
+              <xs:complexType>
+                <xs:attribute name="panelTitle" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Container" type="cnt:ContainerType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="package" type="xs:string" use="required"/>
+    <xs:attribute name="class" type="xs:string" use="required"/>
+    <xs:attribute ref="xml:base"/>
+  </xs:complexType>
+
+</xs:schema>

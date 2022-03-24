@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<el:Element
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Element Element.xsd"
+  xmlns:el="Element"
+  >
+  
+  <Details type="TextOut" name="FormID" text=""/>
+  <Locator by="id" text="FORM_ID"/>   
+  <TestDataIn insertWith="EmployeeLookupByName">                     
+    <Text value="Borg"/>
+  </TestDataIn>
+  <TestDataOut>                     
+    <Text value="0123456M"/>
+  </TestDataOut>    
+  <Function isDefaultPass="true"/>
+</el:Element>
