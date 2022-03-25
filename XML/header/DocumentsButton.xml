@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element>
-  <Details type="button" name="Documents" text="" fafa="fa fa-file-o"/>
-  <Locator by="css" text="div[title='No Documents Attached']"/>
-  <ToolTip text="No Documents Attached"/>                
-  <Function isDefaultPass="true"/>
-</Element>
+<ct:Element 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
+  
+  xmlns:ct="Container" 
+  xmlns:et="ElementType">  
+  
+  <et:Details type="Button" name="Documents" text="" fafa="fa fa-file-o"/>
+  <et:Locator by="css" text="div[title='No Documents Attached']"/>                
+  <et:ToolTip text="No Documents Attached"/>
+  <et:Function isDefaultPass="true"  type="Element"/>
+</ct:Element>

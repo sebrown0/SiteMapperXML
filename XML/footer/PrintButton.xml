@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element>
-  <Details type="button" name="Print" text="Print" fafa="fa fa-print"/>
-  <Locator by="css" text="button[name='PRINT1']"/>                
-  <Function isDefaultPass="true" />
-</Element>
+<ct:Element 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
+  
+  xmlns:ct="Container" 
+  xmlns:et="ElementType">  
+  
+  <et:Details type="Button" name="Print" text="Print" fafa="fa fa-print"/>
+  <et:Locator by="css" text="button[name='PRINT1']"/>                
+  <et:Function isDefaultPass="true"  type="Element"/>
+</ct:Element>

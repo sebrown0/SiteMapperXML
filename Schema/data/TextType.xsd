@@ -5,7 +5,11 @@
   elementFormDefault="qualified"  
   >
   
+  <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
+    namespace="http://www.w3.org/XML/1998/namespace"/>
+  
   <xs:complexType name="TextType">
     <xs:attribute name="value" type="xs:string" />
+    <xs:attribute ref="xml:base"/>
   </xs:complexType>
 </xs:schema>

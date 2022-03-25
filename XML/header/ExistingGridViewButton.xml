@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element>
-  <Details type="button" name="ExistingRecords" text="" fafa="fa fw fa-table"/>
-  <Locator by="css" text="div[title='Grid View for existing records']"/>
-  <ToolTip text="Grid View for existing records"/>                
-  <Function isDefaultPass="true" />
-</Element>
+<ct:Element 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
+  
+  xmlns:ct="Container" 
+  xmlns:et="ElementType">  
+  
+  <et:Details type="Button" name="ExistingRecords" text="" fafa="fa fw fa-table"/>
+  <et:Locator by="css" text="div[title='Grid View for existing records']"/>                
+  <et:ToolTip text="Grid View for existing records"/>
+  <et:Function isDefaultPass="true"  type="Element"/>
+</ct:Element>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element>
-  <Details type="button" name="Save" text="Save" fafa="fa fa-save"/>
-  <Locator by="css" text="button[name='SAVE']"/>                
-  <Function isDefaultPass="true" />
-</Element>
+<ct:Element 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
+  
+  xmlns:ct="Container" 
+  xmlns:et="ElementType">  
+  
+  <et:Details type="Button" name="Save" text="Save" fafa="fa fa-save"/>
+  <et:Locator by="css" text="button[name='SAVE']"/>                
+  <et:Function isDefaultPass="true"  type="Element"/>
+</ct:Element>
