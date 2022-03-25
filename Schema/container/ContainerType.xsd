@@ -5,33 +5,44 @@
   elementFormDefault="qualified"
 
   xmlns:loc="Locator"
-  xmlns:elm="ElementType"
-  xmlns:cnt="Container"
+  xmlns:et="ElementType"
+  xmlns:ct="Container"
   xmlns:fun="Function"
+  xmlns:cte="ContainerEnum"
  >
   
- <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/common/LocatorType.xsd" 
-  namespace="Locator"/>
+   <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/common/LocatorType.xsd" 
+    namespace="Locator"/>
 
- <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementType.xsd" 
-  namespace="ElementType"/>
+   <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementType.xsd" 
+    namespace="ElementType"/>
   
- <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/function/FunctionType.xsd" 
-  namespace="Function"/>
+   <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/function/FunctionType.xsd" 
+    namespace="Function"/>
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/container/ContainerEnum.xsd" 
+    namespace="ContainerEnum"/>
    
+  <xs:simpleType name="ContainerEnum">
+    <xs:restriction base="xs:string">      
+      <xs:enumeration value="Item"></xs:enumeration>  <!-- Header, Body, Footer -->
+      <xs:enumeration value="InputGroup"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType> 
+  
   <xs:complexType name="ContainerType">    
     <xs:sequence>
       <xs:element name="Locator" type="loc:LocatorType" minOccurs="0" maxOccurs="1" />      
-      <xs:element name="Container" type="cnt:ContainerType" minOccurs="0" maxOccurs="unbounded" />
-      <xs:element name="Element" type="elm:ElementType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Container" type="ct:ContainerType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Element" type="et:ElementType" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="Function" type="fun:FunctionType" minOccurs="0" maxOccurs="1" />            
     </xs:sequence>       
-    <xs:attribute name="type" type="xs:string" use="required" />
+    <xs:attribute name="type" type="cte:ContainerEnum" use="required" />
     <xs:attribute name="name" type="xs:string" use="required" />    
   </xs:complexType>          
 
 </xs:schema>
-<!--  xmlns="Container"-->

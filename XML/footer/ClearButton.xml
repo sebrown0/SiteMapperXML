@@ -8,6 +8,6 @@
   
   <et:Details type="Button" name="Clear" text="Clear" fafa="fa fa-file-o"/>
   <et:Locator by="css" text="button[name='CLEAR1']"/>                
-  <et:Function isDefaultPass="true"  type="element"/>
+  <et:Function isDefaultPass="true"  type="Element"/>
 </ct:Element>
 

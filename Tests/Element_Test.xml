@@ -5,7 +5,7 @@
     xsi:schemaLocation="Co file:/C:/SiteMapperXML/Schema/container/Container.xsd"
     xmlns:ct="Co"
     
-    name="Test Container" type="Container">
+    name="Test Container" type="InputGroup">
         
     <xi:include 
         xmlns:xi="http://www.w3.org/2001/XInclude" 
