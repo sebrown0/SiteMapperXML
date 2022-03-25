@@ -3,6 +3,7 @@
   targetNamespace="Container"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified"
+
   xmlns:loc="Locator"
   xmlns:elm="ElementType"
   xmlns:cnt="Container"
@@ -33,4 +34,4 @@
   </xs:complexType>          
 
 </xs:schema>
-  
+<!--  xmlns="Container"-->

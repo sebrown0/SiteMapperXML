@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ct:Container 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="Co file:/C:/SiteMapperXML/Schema/container/Container.xsd"
+    xmlns:ct="Co"
+    
+    name="Test Container" type="Container">
+        
+    <xi:include 
+        xmlns:xi="http://www.w3.org/2001/XInclude" 
+        href="file:/C:/SiteMapperXML/XML/footer/ClearButton.xml" />
+
+</ct:Container>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+The NS collides with that of ContainerType,
+so we have the abreviated version unitl we change it.
+-->
+    <xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="Co" targetNamespace="Co"     
+    xmlns:t="Container"
+    elementFormDefault="qualified">
+    
+    <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/container/ContainerType.xsd" 
+    namespace="Container"/>
+    
+    <xs:element name="Container" type="t:ContainerType"></xs:element>
+</xs:schema>

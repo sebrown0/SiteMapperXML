@@ -9,24 +9,26 @@
   xmlns:dout="TestDataOut"
   xmlns:det="ElementDetails"        
   >
+  <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
+    namespace="http://www.w3.org/XML/1998/namespace"/>
   
- <xs:import 
+  <xs:import 
     schemaLocation="file:/C:/SiteMapperXML/Schema/common/LocatorType.xsd" 
     namespace="Locator"/>
 
- <xs:import 
-   schemaLocation="file:/C:/SiteMapperXML/Schema/function/FunctionType.xsd" 
+  <xs:import 
+  schemaLocation="file:/C:/SiteMapperXML/Schema/function/FunctionType.xsd" 
   namespace="Function"/>
  
- <xs:import 
+  <xs:import 
   schemaLocation="file:/C:/SiteMapperXML/Schema/data/TestDataIn.xsd"  
   namespace="TestDataIn" />
  
- <xs:import 
+  <xs:import 
   schemaLocation="file:/C:/SiteMapperXML/Schema/data/TestDataOut.xsd"  
   namespace="TestDataOut" />
       
- <xs:import 
+  <xs:import 
   schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementDetailsType.xsd"  
   namespace="ElementDetails" />
   
@@ -42,7 +44,8 @@
       <xs:element name="TestDataIn" type="din:TestDataInType" minOccurs="0" maxOccurs="1" />
       <xs:element name="TestDataOut" type="dout:TestDataOutType" minOccurs="0" maxOccurs="1" />
       <xs:element name="Function" type="fun:FunctionType" minOccurs="0" maxOccurs="1" /> 
-    </xs:sequence>                       
+    </xs:sequence>              
+    <xs:attribute ref="xml:base"/>
   </xs:complexType>  
   
 </xs:schema>

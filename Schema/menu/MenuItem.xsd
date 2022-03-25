@@ -9,35 +9,4 @@
     <xs:element name="MenuItem" type="mit:MenuItemType" />
     
 </xs:schema>
-<!--
-<xs:schema targetNamespace="Menu" xmlns:mit="MenuItem"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cnt="Container" elementFormDefault="qualified">
 
-    <xs:import schemaLocation="file:/C:/SiteMapperXML/Schema/container/ContainerType.xsd"
-        namespace="Container"/>
-
-    <xs:element name="MenuItem">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Type" minOccurs="1" maxOccurs="1">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="JsPanelWithIFrame">
-                                <xs:complexType>
-                                    <xs:attribute name="panelTitle" type="xs:string" use="required"
-                                    />
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                        <xs:attribute name="name" type="xs:string" use="required"/>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="Container" type="cnt:ContainerType" minOccurs="0"
-                    maxOccurs="unbounded"/>
-            </xs:sequence>
-            <xs:attribute name="name" type="xs:string" use="required"/>
-            <xs:attribute name="package" type="xs:string" use="required"/>
-            <xs:attribute name="class" type="xs:string" use="required"/>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>-->

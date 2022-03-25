@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Use specifically for elements, i.e. Button, TextOut etc.
+This has the NS:Container which means that the element
+can be included in any Container. 
+-->
 <xs:schema
-    xmlns="Element"
-    targetNamespace="Element" 
+    xmlns="Container"
+    targetNamespace="Container" 
     xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     xmlns:et="ElementType"
     >
-        
+    
     <xs:import 
         schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementType.xsd"  
         namespace="ElementType" />
