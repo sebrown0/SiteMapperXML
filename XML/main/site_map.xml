@@ -42,20 +42,14 @@
       <mod:Menus>        
         <menus:Menu name="Left" package="left_menu">        
           
-         
-          <!-- 
-          <menu:MenuItem name="" package="" class="">
-            <itm:Type name="">
-              <itm:JsPanelWithIFrame panelTitle=""/>
-            </itm:Type>
-          </menu:MenuItem>
-          -->
           <xi:include 
             xmlns:xi="http://www.w3.org/2001/XInclude" 
-            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/contact.xml" />
- 
+            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/SalaryDetails.xml" />
           
-          
+          <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/Contact.xml" /> 
+                    
         </menus:Menu>
       </mod:Menus>
     </mods:Module>

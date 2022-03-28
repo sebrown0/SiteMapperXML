@@ -9,7 +9,9 @@
             <xs:enumeration value="Item"/>
             <!-- Header, Body, Footer -->
             <xs:enumeration value="InputGroup"/>
+            <xs:enumeration value="Tabs"></xs:enumeration>
+            <xs:enumeration value="Tab"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
-
+   
 </xs:schema>

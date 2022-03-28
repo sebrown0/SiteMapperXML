@@ -22,37 +22,3 @@
   </xs:element>
 </xs:schema>
 
-
-<!--<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema  
-  targetNamespace="TestDataIn"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  elementFormDefault="qualified"
-  xmlns:dt="DataType"
-  xmlns:dat="Data"
-  >
-  <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
-    namespace="http://www.w3.org/XML/1998/namespace"/>
-  
-  <xs:import 
-    schemaLocation="file:/C:/SiteMapperXML/XML/data/DataType.xsd" 
-    namespace="DataType"/>
-  
-  <!-\-<xs:import 
-    schemaLocation= "file:/C:/SiteMapperXML/XML/data/ElementData.xsd" 
-    namespace="Data"/>-\->
-  
-  <!-\-<xs:import 
-    schemaLocation= "TextType.xsd" 
-    namespace="Text"/>-\->
-  
-  <xs:complexType name="TestDataInType">
-    <xs:sequence>
-      <xs:element name="Data" type="dt:DataType" />      
-      <!-\-<xs:element name="Text" type="txt:TextType" />-\->
-    </xs:sequence>
-    <xs:attribute name="insertWith" type="xs:string" />
-    <xs:attribute ref="xml:base"/>
-  </xs:complexType>
-</xs:schema>-->
-<!--  xmlns:txt="Text"  -->

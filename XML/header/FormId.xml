@@ -15,44 +15,6 @@
     <xi:include 
       xmlns:xi="http://www.w3.org/2001/XInclude" 
       href="file:/C:/SiteMapperXML/XML/data/EmployeeData.xml" />
-  
-  
-  <!--<et:TestDataIn insertWith="EmployeeLookupByName">                     
-    <xi:include 
-      xmlns:xi="http://www.w3.org/2001/XInclude" 
-      href="file:/C:/SiteMapperXML/XML/data/EmployeeData.xml" />
-  </et:TestDataIn>-->
-  <!--<et:TestDataIn insertWith="EmployeeLookupByName">                     
-    <xi:include 
-      xmlns:xi="http://www.w3.org/2001/XInclude" 
-      href="file:/C:/SiteMapperXML/XML/data/DataIn.xml" />
-  </et:TestDataIn>-->
-  
-  <!--<et:TestDataOut>                     
-    <dout:Text value="0123456M"/>
-  </et:TestDataOut>-->
-  
+   
   <et:Function isDefaultPass="true"  type="Element"/>
 </ct:Element>
-
-<!--<?xml version="1.0" encoding="UTF-8"?>
-<ct:Element 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-  xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
-  
-  xmlns:ct="Container" 
-  xmlns:din="TestDataIn"
-  xmlns:dout="TestDataOut"
-  xmlns:et="ElementType">  
-  
-  <et:Details type="TextOut" name="FormID" text=""/>
-  <et:Locator by="id" text="FORM_ID"/>          
-  <!-\- NO TOOLTIP?? -\-> 
-  <et:TestDataIn insertWith="EmployeeLookupByName">                     
-    <din:Text value="Borg"/>
-  </et:TestDataIn>
-  <et:TestDataOut>                     
-    <dout:Text value="0123456M"/>
-  </et:TestDataOut>
-  <et:Function isDefaultPass="true"  type="Element"/>
-</ct:Element>-->
