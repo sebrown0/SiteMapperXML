@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="Data"
+    targetNamespace="Data" elementFormDefault="qualified"
+    xmlns:dt="DataType">
+    
+    <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/XML/data/DataType.xsd" 
+    namespace="DataType"/>
+    
+    <xs:element name="Data" type="dt:DataType" />
+    
+    <!-- 
+    <xs:complexType name="ElementData" >
+            <xs:sequence>
+                <xs:element name="Data" type="dt:Data"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+     -->
+</xs:schema>

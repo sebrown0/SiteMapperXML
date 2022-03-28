@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="TestData"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  xmlns:dt="DataType">
+  
+  <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
+    namespace="http://www.w3.org/XML/1998/namespace"/>
+  
+  
+  <xs:complexType name="Data">
+    <xs:sequence>
+      <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="id" type="xs:string" use="required"/>    
+          <xs:attribute name="value" type="xs:string" use="required"/>
+          <xs:attribute name="insertWith" type="xs:string" use="optional"/>
+        </xs:complexType>
+      </xs:element>                    
+    </xs:sequence>
+    <xs:attribute ref="xml:base"/>
+  </xs:complexType>
+  
+</xs:schema>
