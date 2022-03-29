@@ -7,7 +7,7 @@
   
   <xs:import schemaLocation="http://www.w3.org/2001/03/xml.xsd"
     namespace="http://www.w3.org/XML/1998/namespace"/>
-  
+  <!-- targetNamespace was ElementType -->
   
   <xs:complexType name="Data">
     <xs:sequence>
@@ -15,6 +15,10 @@
         <xs:complexType>
           <xs:attribute name="id" type="xs:string" use="required"/>    
           <xs:attribute name="value" type="xs:string" use="required"/>
+          <!-- 
+            this should be lookupWith for data out
+            so we need 2 types that extend this as a base.
+           -->
           <xs:attribute name="insertWith" type="xs:string" use="optional"/>
         </xs:complexType>
       </xs:element>                    

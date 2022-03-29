@@ -19,12 +19,5 @@
       </xs:choice>
     </xs:sequence>
   </xs:complexType>
-  <!-- 
-    
-  <xs:complexType name="MenusType">
-    <xs:sequence>
-      <xs:element name="Menu" type="men:MenuType" minOccurs="1" maxOccurs="unbounded" />
-    </xs:sequence>
-  </xs:complexType>
-     -->
+  
 </xs:schema>
