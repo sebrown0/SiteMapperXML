@@ -9,11 +9,22 @@
   <xs:import 
   schemaLocation="MenuType.xsd" 
   namespace="Menu"/>
+  
+  <xs:complexType name="MenusType">
+    <xs:sequence>      
+      <xs:element name="Menu" minOccurs="1" maxOccurs="1" />
+      <xs:choice>
+        <xs:element name="Left" type="men:MenuType" minOccurs="0" maxOccurs="1" />
+        <xs:element name="TopRight" type="men:MenuType" minOccurs="0" maxOccurs="1" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- 
     
   <xs:complexType name="MenusType">
     <xs:sequence>
       <xs:element name="Menu" type="men:MenuType" minOccurs="1" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
-    
+     -->
 </xs:schema>
