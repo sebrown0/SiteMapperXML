@@ -13,8 +13,6 @@
   <xs:complexType name="MenuType">
     <xs:sequence>                                
       <xs:element name="MenuItem" type="itm:MenuItemType" maxOccurs="unbounded"/>    
-    </xs:sequence>
-    <xs:attribute name="name" type="xs:string" use="required" />
-    <xs:attribute name="package" type="xs:string" use="required" />
+    </xs:sequence>    
   </xs:complexType>
 </xs:schema>

@@ -23,17 +23,7 @@
    <xs:import 
     schemaLocation="file:/C:/SiteMapperXML/Schema/data/TestData.xsd" 
     namespace="TestData"/>
-    <!-- 
-    xmlns:din="ElementType"
-  xmlns:dout="TestDataOut"
-  <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/data/TestDataIn.xsd"  
-  namespace="ElementType" />
- 
-  <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/data/TestDataOut.xsd"  
-  namespace="TestDataOut" />
-       -->
+
        
   <xs:import 
   schemaLocation="file:/C:/SiteMapperXML/Schema/element/ElementDetailsType.xsd"  
@@ -43,12 +33,12 @@
     <xs:sequence>
       <xs:element name="Details" type="det:ElementDetailsType" minOccurs="1" maxOccurs="1" />
       <xs:element name="Locator" type="loc:LocatorType"  minOccurs="1" maxOccurs="1" />        
-      <xs:element name="ToolTip"  minOccurs="0" maxOccurs="1" >
+      <xs:element name="ToolTip" minOccurs="0" maxOccurs="1" >
         <xs:complexType>                                                    
           <xs:attribute name="text" type="xs:string"/>
         </xs:complexType>
       </xs:element>         
-      <xs:element name="TestData">
+      <xs:element name="TestData" minOccurs="0" maxOccurs="1">
         <xs:complexType>
           <xs:sequence>
              <xs:element name="In" type="td:Data" minOccurs="0" maxOccurs="1" />
@@ -60,22 +50,5 @@
     </xs:sequence>              
     <xs:attribute ref="xml:base"/>
   </xs:complexType>   
-  
-  <!-- 
-  <xs:complexType name="ElementType">                                                    
-    <xs:sequence>
-      <xs:element name="Details" type="det:ElementDetailsType" minOccurs="1" maxOccurs="1" />
-      <xs:element name="Locator" type="loc:LocatorType"  minOccurs="1" maxOccurs="1" />        
-      <xs:element name="ToolTip"  minOccurs="0" maxOccurs="1" >
-        <xs:complexType>                                                    
-          <xs:attribute name="text" type="xs:string"/>
-        </xs:complexType>
-      </xs:element>         
-      <xs:element name="TestDataIn" type="din:TestDataIn" minOccurs="0" maxOccurs="1" />
-      <xs:element name="TestDataOut" type="dout:TestDataOutType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="Function" type="fun:FunctionType" minOccurs="0" maxOccurs="1" /> 
-    </xs:sequence>              
-    <xs:attribute ref="xml:base"/>
-  </xs:complexType>   -->
   
 </xs:schema>
