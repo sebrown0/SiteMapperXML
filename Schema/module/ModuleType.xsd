@@ -2,41 +2,20 @@
 <xs:schema  
   targetNamespace="Module"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  elementFormDefault="qualified"
-  xmlns:menus="Menus"
+  elementFormDefault="qualified"  
   xmlns:men="Menu"
   > 
   
   <xs:import 
   schemaLocation="file:/C:/SiteMapperXML/Schema/menu/MenuType.xsd" 
   namespace="Menu"/>
-  
-  <xs:import 
-  schemaLocation="file:/C:/SiteMapperXML/Schema/menu/MenusType.xsd" 
-  namespace="Menus"/>
-  <!--   
+    
   <xs:complexType name="ModuleType">
-    <xs:sequence>      
-      <xs:element name="Menu" minOccurs="1" maxOccurs="unbounded">
-        <xs:complexType>
-          <xs:choice>
-            <xs:element name="Left" type="men:MenuType" minOccurs="0" maxOccurs="1" />
-            <xs:element name="TopRight" type="men:MenuType" minOccurs="0" maxOccurs="1" />
-          </xs:choice>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
+    <xs:all>
+      <xs:element name="LeftMenu" type="men:MenuType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="TopRightNav" type="men:MenuType" minOccurs="0" maxOccurs="1" />
+    </xs:all>      
     <xs:attribute name="name" use="required"></xs:attribute>
   </xs:complexType>
-  -->
   
-    <xs:complexType name="ModuleType">
-    <xs:sequence>
-      <xs:element name="Menus" type="menus:Menu" minOccurs="1" maxOccurs="unbounded">
-      
-      </xs:element>
-    </xs:sequence>
-    <xs:attribute name="name" use="required"></xs:attribute>
-  </xs:complexType>
-   
 </xs:schema>
