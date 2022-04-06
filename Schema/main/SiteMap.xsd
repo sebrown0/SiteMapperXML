@@ -4,13 +4,17 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified"
   xmlns:inf="SiteMapInfo"
+  xmlns:dyn="DynamicTestInfo"
   xmlns:inc="IncludeElementsInTest"  
   xmlns:mods="Modules"  
   >
-    
   <xs:import 
     schemaLocation="file:/C:/SiteMapperXML/Schema/info/SiteMapInfoType.xsd" 
     namespace="SiteMapInfo"/>
+      
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/dynamic_tests/DynamicTestInfoType.xsd" 
+    namespace="DynamicTestInfo"/>
   
   <xs:import 
     schemaLocation="file:/C:/SiteMapperXML/Schema/info/IncludeElementsForTestType.xsd" 
@@ -23,7 +27,8 @@
   <xs:element name="SiteMap">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Info" type="inf:SiteMapInfoType" />         
+        <xs:element name="Info" type="inf:SiteMapInfoType" />
+        <xs:element name="DynamicTestInfo" type="dyn:DynamicTestInfoType" />                
         <xs:element name="IncludeElementsForTest" type="inc:IncludeElementsForTestType" />
         <xs:element name="Modules" type="mods:ModulesType" />
       </xs:sequence>

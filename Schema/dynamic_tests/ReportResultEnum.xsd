@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="ReportResultEnum" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified">
+
+  <xs:simpleType name="Result">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All"/>
+      <xs:enumeration value="Fails"/>
+      <xs:enumeration value="Passed"/>
+      <xs:enumeration value="Ignored"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

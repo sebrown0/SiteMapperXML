@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  
+  targetNamespace="DynamicTestInfo"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  xmlns:repStrat="ReportStrategyEnum"
+  xmlns:repRes="ReportResultEnum"
+  >
+  
+  <xs:import
+    schemaLocation="ReportStrategyEnum.xsd"    
+    namespace="ReportStrategyEnum"
+  />
+  
+  <xs:import
+    schemaLocation="ReportResultEnum.xsd"    
+    namespace="ReportResultEnum"
+  />
+  
+  <xs:complexType name = "DynamicTestInfoType">
+    <xs:sequence>              
+      <xs:element name="ReportStrategy" type="repStrat:Strategy" minOccurs="1" maxOccurs="1" />
+      <xs:element name="ReportResults" type="repRes:Result" minOccurs="1" maxOccurs="1" />      
+    </xs:sequence>
+  </xs:complexType>
+    
+</xs:schema>
