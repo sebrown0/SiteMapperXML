@@ -6,6 +6,7 @@
   xmlns="Root"
   
   xmlns:inf="SiteMapInfo"
+  xmlns:dyn="DynamicTestInfo"
   xmlns:inc="IncludeElementsInTest"
   xmlns:el="Element"
   xmlns:itm="MenuItem"
@@ -28,7 +29,10 @@
     <inf:ParentPackage>object_models/modules</inf:ParentPackage>
     <inf:ElementLibrary>C:/Users/SteveBrown/eclipse-workspace/2021/DTest</inf:ElementLibrary>
   </Info>
-  
+  <DynamicTestInfo>
+    <dyn:ReportStrategy>Console</dyn:ReportStrategy>
+    <dyn:ReportResults>Passed</dyn:ReportResults>  
+  </DynamicTestInfo>
   <IncludeElementsForTest>
     <inc:Include>Button</inc:Include>
     <inc:Include>TextSelect</inc:Include>
@@ -39,19 +43,17 @@
   
   <Modules>
     <mods:Module name="payroll">
-      <mod:Menus>        
-        <menus:Menu name="Left" package="left_menu">        
-          
-          <xi:include 
-            xmlns:xi="http://www.w3.org/2001/XInclude" 
-            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/SalaryDetails.xml" />
-          
-          <xi:include 
-            xmlns:xi="http://www.w3.org/2001/XInclude" 
-            href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/Contact.xml" /> 
-                    
-        </menus:Menu>
-      </mod:Menus>
+      <mod:LeftMenu>
+        
+        <xi:include 
+          xmlns:xi="http://www.w3.org/2001/XInclude" 
+          href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/SalaryDetails.xml" />
+        
+        <xi:include 
+          xmlns:xi="http://www.w3.org/2001/XInclude" 
+          href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/Contact.xml" /> 
+      </mod:LeftMenu>
+
     </mods:Module>
   </Modules>
 </SiteMap>

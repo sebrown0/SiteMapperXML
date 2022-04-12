@@ -3,15 +3,13 @@
 <MenuItem
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
     xsi:schemaLocation="MenuItem file:/C:/SiteMapperXML/Schema/menu/MenuItem.xsd"
-    
+    xmlns="Menu"
     xmlns:mit="MenuItemType"
     xmlns:ct="Container"
     xmlns:et="ElementType"
-    xmlns:el="Element"
+    xmlns:el="Element"    
+    name="Salary Details" package="Employees" class="SalaryDetails">
     
-    xmlns="Menu"
-    
-    name="Salary Details" package="Employees" class="SalaryDetails">            
     <mit:Type name="JsPanelWithIFrame">
         <mit:JsPanelWithIFrame panelTitle="Employee Salary Details" /> 
     </mit:Type>            
@@ -25,10 +23,8 @@
             <xi:include 
                 xmlns:xi="http://www.w3.org/2001/XInclude" 
                 href="file:/C:/SiteMapperXML/XML/header/EmpListButton.xml" />            
-            
-                         
-            <ct:Element>
-                
+                                     
+            <ct:Element>                
                 <et:Details type="Button" name="SalaryHistory" text="" fafa="fa fa-list"/>
                 <et:Locator by="css" text="div[title='View Salary History']"/>
                 <et:ToolTip text="View Salary History"/>                
@@ -66,8 +62,7 @@
         <ct:Container type="Tabs" name="Tabs">
             <ct:Locator by="css" text="ul[class='nav nav-tabs']"/>
             <ct:Container type="Tab" name="SalaryDetails">
-                <ct:Locator by="css" text="a[id='tab-tab1']"/>
-                
+                <ct:Locator by="css" text="a[id='tab-tab1']"/>                
                 <ct:Element>
                     <et:Details type="Label" name="LabelReason" text="Reason"/>
                     <et:Locator by="css" text="label[for='REASON']"/>                   

@@ -4,17 +4,16 @@
   xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd"
   
   xmlns:ct="Container" 
-  xmlns:din="TestDataIn"
-  xmlns:dout="TestDataOut"
+  xmlns:td="TestData" 
   xmlns:et="ElementType">  
   
   <et:Details type="TextOut" name="FormID" text=""/>
-  <et:Locator by="id" text="FORM_ID"/>          
-  <!-- NO TOOLTIP?? -->
-                       
-    <xi:include 
-      xmlns:xi="http://www.w3.org/2001/XInclude" 
-      href="file:/C:/SiteMapperXML/XML/data/EmployeeData.xml" />
-   
+  <et:Locator by="id" text="FORM_ID"/>      
+  <et:TestData>
+    <et:In>
+      <td:item id="name" value="Borg" insertWith="EmployeeLookupByName"/>      
+    </et:In>
+  </et:TestData>
+  <!-- NO TOOLTIP?? -->   
   <et:Function isDefaultPass="true"  type="Element"/>
 </ct:Element>

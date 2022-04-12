@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<et:TestDataIn 
+<et:TestData 
     xmlns:et="ElementType"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="TestDataIn file:/C:/SiteMapperXML/Schema/data/TestDataIn.xsd"
-    xmlns:td="TestData"
-    xmlns:dt="DataType"
+    xsi:schemaLocation="TestData file:/C:/SiteMapperXML/Schema/data/TestData.xsd"
+    
+    
     
     >
     
@@ -13,7 +13,7 @@
         <td:item id="code" value="0123456M"/>        
     </et:Data>
     
-</et:TestDataIn>
+</et:TestData>
 <!--xmlns="TestDataIn"-->
 <!-- IS THIS BEING USED?????????????? -->
         
