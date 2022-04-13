@@ -24,15 +24,17 @@
   <Info>
     <inf:Author>SteveBrown</inf:Author>
     <inf:Version>1.0.0</inf:Version>
-    <inf:CreationMethod>IgnoreExisting</inf:CreationMethod>
+    <inf:CreationMethod>OverwriteExisting</inf:CreationMethod>
     <inf:RootDir>C:/Users/SteveBrown/eclipse-workspace/2021/DTest/src/main/java</inf:RootDir>
     <inf:ParentPackage>object_models/modules</inf:ParentPackage>
     <inf:ElementLibrary>C:/Users/SteveBrown/eclipse-workspace/2021/DTest</inf:ElementLibrary>
   </Info>
+  
   <DynamicTestInfo>
     <dyn:ReportStrategy>Console</dyn:ReportStrategy>
-    <dyn:ReportResults>Passed</dyn:ReportResults>  
+    <dyn:ReportResults>All</dyn:ReportResults>  
   </DynamicTestInfo>
+  
   <IncludeElementsForTest>
     <inc:Include>Button</inc:Include>
     <inc:Include>TextSelect</inc:Include>
@@ -51,7 +53,8 @@
         
         <xi:include 
           xmlns:xi="http://www.w3.org/2001/XInclude" 
-          href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/Contact.xml" /> 
+          href="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/Contact.xml" />
+        
       </mod:LeftMenu>
 
     </mods:Module>

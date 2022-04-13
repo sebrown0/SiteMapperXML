@@ -10,6 +10,26 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>Schema/main/SiteMap.xsd</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Include</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>XML/main/site_map.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -144,5 +164,6 @@
     </meta>
     <projectTree name="SiteMapperXML.xpr">
         <folder path="."/>
+        <file name="Schema/function/EmployeeType.xsd"/>
     </projectTree>
 </project>

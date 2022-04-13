@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="Employees" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:complexType name="Employee">
+        <xs:sequence>
+            <xs:element name="Required" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Code" type="xs:string"/>
+                        <xs:element name="FirstName" type="xs:string"/>
+                        <xs:element name="Surname" type="xs:string"/>
+                        <xs:element name="IdCardNumber" type="xs:string"/>
+                        <xs:element name="AddressOne" type="xs:string"/>
+                        <xs:element name="Town" type="xs:string"/>
+                        <xs:element name="Country" type="xs:string"/>
+                        <xs:element name="Gender" type="xs:string"/>
+                        <xs:element name="DOB" type="xs:string"/>
+                        <xs:element name="DOE" type="xs:string"/>
+                        <xs:element name="TaxNumber" type="xs:string"/>
+                        <xs:element name="NiNumber" type="xs:string"/>
+                        <xs:element name="PayGroup" type="xs:string"/>
+                        <xs:element name="AnnualSalary" type="xs:string"/>
+                        <xs:element name="HourlyRate" type="xs:string"/>                        
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Optional" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Title" type="xs:string"/>
+                        <xs:element name="Street" type="xs:string"/>
+                        <xs:element name="PostCode" type="xs:string"/>
+                        <xs:element name="Bank" type="xs:string"/>
+                        <xs:element name="IBAN" type="xs:string"/>
+                        <xs:element name="EmailAddress" type="xs:string"/>
+                        <xs:element name="MobileNumber" type="xs:string"/>
+                        <xs:element name="TaxStatus" type="xs:string"/>
+                        <xs:element name="ContractType" type="xs:string"/>
+                        <xs:element name="Company" type="xs:string"/>
+                        <xs:element name="Department" type="xs:string"/>
+                        <xs:element name="Schedule" type="xs:string"/>
+                        <xs:element name="EmploymentType" type="xs:string"/>
+                        <xs:element name="IsSpecialPartTimer" type="xs:string"/>
+                        <xs:element name="Grade" type="xs:string"/>  
+                        <xs:element name="CostCenter" type="xs:string"/>                        
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

@@ -3,22 +3,36 @@
   targetNamespace="Function"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified"
+  xmlns:emp="Employees"
   xmlns:funcType="FunctionTypeEnum"
   xmlns:funcSubtype="FunctionSubtypeEnum"
   >
       
   <xs:import 
   schemaLocation="FunctionTypeEnum.xsd" 
-  namespace="FunctionTypeEnum"/>
-  
+  namespace="FunctionTypeEnum"/>  
   <xs:import 
-  schemaLocation="FunctionSubtypeEnum.xsd" 
-  namespace="FunctionSubtypeEnum"/>
+    schemaLocation="FunctionSubtypeEnum.xsd" 
+    namespace="FunctionSubtypeEnum"/>
+  <xs:import 
+    schemaLocation="EmployeeType.xsd" 
+    namespace="Employees"/>
             
   <xs:complexType name = "FunctionType">
+    <xs:all>
+      <xs:element name="data" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Employee" type="emp:Employee"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
     <xs:attribute name="isDefaultPass" type="xs:boolean" use="optional" default="true" />
     <xs:attribute name="type" type="funcType:FuncEnum" use="required" />
-    <xs:attribute name="subtype" type="funcSubtype:FuncSubtypeEnum" use="optional" default="none" />              
+    <xs:attribute name="subtype" type="funcSubtype:FuncSubtypeEnum" use="optional" default="none" />        
+    <xs:attribute name="functionName" type="xs:string" use="optional"/>
+    <xs:attribute name="functionMessage" type="xs:string" use="optional"/>
   </xs:complexType>
     
 </xs:schema>
