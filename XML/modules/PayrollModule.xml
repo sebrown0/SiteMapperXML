@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="Module file:/C:/SiteMapperXML/Schema/module/ModuleType.xsd" 
+    xmlns="Module" 
+    name="payroll">
+    
+    <LeftMenu>
+        <!-- EMPLOYEES -->
+        <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/modules/payroll/left_menu/employees/ContactNumbers.xml" 
+        />
+        
+        <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/modules/payroll/left_menu/employees/SalaryDetails.xml" 
+        />
+        
+        <!-- EMPLOYEE OTHERS -->
+        <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/modules/payroll/left_menu/employee_others/AbsenceEntitlements.xml" 
+        />
+    </LeftMenu>
+    
+    <TopRightNav>
+        <xi:include 
+            xmlns:xi="http://www.w3.org/2001/XInclude" 
+            href="file:/C:/SiteMapperXML/XML/modules/payroll/top_right_nav/EmployeeCreation.xml" 
+        />
+    </TopRightNav>
+</Module>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem xmlns="Menu"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="Menu ../../../../Schema/menu/MenuItem.xsd" name="" class="">
+    <Type xmlns="MenuItemType" name="">
+        <JsPanelWithIFrame panelTitle=""/>
+    </Type>
+</MenuItem>

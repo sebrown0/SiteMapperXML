@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema targetNamespace="Menu" xmlns:mit="MenuItemType"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cnt="Container" elementFormDefault="qualified">
+<xs:schema 
+    targetNamespace="Menu" 
+    xmlns:mit="MenuItemType"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:cnt="Container" elementFormDefault="qualified">
     
-    <xs:import schemaLocation="file:/C:/SiteMapperXML/Schema/menu/MenuItemType.xsd"
+    <xs:import 
+        schemaLocation="file:/C:/SiteMapperXML/Schema/menu/MenuItemType.xsd"
         namespace="MenuItemType"/>
     
     <xs:element name="MenuItem" type="mit:MenuItemType" />

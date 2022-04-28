@@ -3,10 +3,15 @@
   targetNamespace="Locator"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   elementFormDefault="qualified"
+  xmlns:by="ByEnumType"
   >
+  
+  <xs:import 
+    schemaLocation="file:/C:/SiteMapperXML/Schema/common/ByTypeEnum.xsd" 
+    namespace="ByEnumType"/>
 
   <xs:complexType name="LocatorType">                                           
-    <xs:attribute name="by" type="xs:string"/>
+    <xs:attribute name="by" type="by:ByTypeEnum"/>
     <xs:attribute name="text" type="xs:string"/>
   </xs:complexType>
 

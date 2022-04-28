@@ -15,8 +15,7 @@
     <xs:sequence>              
       <xs:element name="Author" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="Version" type="xs:string" minOccurs="1" maxOccurs="1" />
-      <xs:element name="CreationMethod" type="mth:CreationMethod" minOccurs="1" maxOccurs="1" />
-      <xs:element name="RootDir" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="CreationMethod" type="mth:CreationMethod" minOccurs="1" maxOccurs="1" />      
       <xs:element name="ParentPackage" type="xs:string" minOccurs="1" maxOccurs="1" />
       <xs:element name="ElementLibrary" type="xs:string" minOccurs="1" maxOccurs="1" />
     </xs:sequence>

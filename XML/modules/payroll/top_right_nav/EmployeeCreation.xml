@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem 
+  xmlns="Menu"
+  xmlns:ct="Container"
+  xmlns:et="ElementType"
+  xmlns:mit="MenuItemType" 
+  xmlns:fun="Function"
+  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="Menu file:/C:/SiteMapperXML/Schema/menu/MenuItem.xsd"
+  xml:base="file:/C:/SiteMapperXML/XML/modules/payroll/top_right_nav/EmployeeCreation.xml"  
+  
+  name="Employee Creation" 
+  package="Employees" 
+  class="EmployeeCreation" 
+  library="EmployeeCreationWizard" 
+  fafa="fa fa-plus" 
+  tooltip="Employee Creation"  
+  >
+  
+    <mit:Type name="JsPanelWithIFrame">
+      <mit:JsPanelWithIFrame panelTitle="Employee Creation Wizard" />
+    </mit:Type>
+    <mit:Container type="Item" name="FooterElements">
+      <ct:Container type="InputGroup" name="PageFooterBtns">
+        <ct:Locator by="css" text="ul[role='menu']"/>
+        <ct:Element>
+          <et:Details type="Button" name="Next" text="CONTINUE"/>
+          <et:Locator by="css" text="a[href='#next']"/>
+          <et:ToolTip text="NO TOOL TIP FOUND"/>
+          <et:Function type="Element" subtype="Button" isDefaultPass="false" 
+            functionName="CreateExitingEmployee" functionMessage="Create existing employee">
+            <fun:data>
+              <fun:Employee>
+                <Required
+                  xmlns="Employees">
+                  <Code>MS_123</Code>
+                  <FirstName>Marge</FirstName>
+                  <Surname>Simpson</Surname>
+                  <IdCardNumber>0154213A</IdCardNumber>
+                  <AddressOne>747</AddressOne>
+                  <Town>Attard</Town>
+                  <Country>Malta</Country>
+                  <Gender>FEMALE</Gender>
+                  <DOB>11/03/2002</DOB>
+                  <DOE>01/01/2021</DOE>
+                  <TaxNumber>153456</TaxNumber>
+                  <NiNumber>153456</NiNumber>
+                  <PayGroup>Fourweekly</PayGroup>
+                  <AnnualSalary>100000</AnnualSalary>
+                  <HourlyRate>100</HourlyRate>
+                </Required>
+                <Optional
+                  xmlns="Employees">
+                  <Title>Mrs</Title>
+                  <Street>A Street</Street>
+                  <PostCode>A Postcode</PostCode>
+                  <Bank></Bank>
+                  <IBAN></IBAN>
+                  <EmailAddress>margesimpson@dakarsoftware.com</EmailAddress>
+                  <MobileNumber>123456</MobileNumber>
+                  <TaxStatus>P</TaxStatus>
+                  <ContractType></ContractType>
+                  <Company></Company>
+                  <Department></Department>
+                  <Schedule></Schedule>
+                  <EmploymentType></EmploymentType>
+                  <IsSpecialPartTimer></IsSpecialPartTimer>
+                  <Grade></Grade>
+                  <CostCenter></CostCenter>
+                </Optional>
+              </fun:Employee>
+            </fun:data>
+          </et:Function>
+        </ct:Element>
+      </ct:Container>
+    </mit:Container>
+  
+</MenuItem>

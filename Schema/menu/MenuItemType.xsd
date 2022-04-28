@@ -29,8 +29,7 @@
     <xs:attribute name="package" type="xs:string" use="optional"/>
     <xs:attribute name="library" type="xs:string" use="optional"/>
     <xs:attribute name="class" type="xs:string" use="required"/>
-    <xs:attribute name="fafa" type="xs:string" use="optional"/>
-    <xs:attribute name="returns" type="xs:string" use="optional"/> 
+    <xs:attribute name="fafa" type="xs:string" use="optional"/>    
     <xs:attribute name="tooltip" type="xs:string" use="optional"/>
     <xs:attribute ref="xml:base"/>
   </xs:complexType>

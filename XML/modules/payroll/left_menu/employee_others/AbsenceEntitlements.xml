@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem 
+    xmlns="Menu"
+    xmlns:ct="Container"
+    xmlns:et="ElementType"
+    xmlns:mit="MenuItemType" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="Menu file:/C:/SiteMapperXML/Schema/menu/MenuItem.xsd" 
+    xml:base="file:/C:/SiteMapperXML/XML/payroll/left_menu/employees/AbsenceEntitlements.xml"
+    
+    name="Absence Entitlements" package="EmployeeOthers" class="AbsenceEntitlements" 
+    >
+    
+    <Type xmlns="MenuItemType" name="JsPanelWithIFrame">
+        <JsPanelWithIFrame panelTitle="Employee Absence Entitlements"/>
+    </Type>
+    
+    <mit:Container type="Item" name="HeaderElements">
+        <ct:Container type="InputGroup" name="EmpLookup">
+            <ct:Locator by="css" text="div[class='input-group']"/>
+            <ct:Element
+                xmlns:td="TestData" xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd" xml:base="/C:/SiteMapperXML/XML/header/FormId.xml">
+                <et:Details type="TextOut" name="FormID" text=""/>
+                <et:Locator by="id" text="FORM_ID"/>
+                <et:TestData>
+                    <et:In>
+                        <td:item id="name" value="Borg" insertWith="EmployeeLookupByName"/>
+                    </et:In>
+                </et:TestData>
+                <et:Function isDefaultPass="true" type="Element"/>
+            </ct:Element>
+            <ct:Element xsi:schemaLocation="Container file:/C:/SiteMapperXML/Schema/container/ContainerElement.xsd" xml:base="/C:/SiteMapperXML/XML/header/EmpListButton.xml">
+                <et:Details type="Button" name="EmployeeList" text="" fafa="fa fa-list"/>
+                <et:Locator by="css" text="div[title='Search Employee']"/>
+                <et:ToolTip text="Select from a list of employees within the chosen company"/>
+                <et:Function isDefaultPass="true" type="Element"/>
+            </ct:Element>
+            
+        </ct:Container>        
+    </mit:Container>
+       
+</MenuItem>

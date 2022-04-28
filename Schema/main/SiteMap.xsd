@@ -30,7 +30,8 @@
         <xs:element name="Info" type="inf:SiteMapInfoType" />
         <xs:element name="DynamicTestInfo" type="dyn:DynamicTestInfoType" />                
         <xs:element name="IncludeElementsForTest" type="inc:IncludeElementsForTestType" />
-        <xs:element name="Modules" type="mods:ModulesType" />
+        <xs:element name="Modules"/>
+        <!-- <xs:element name="Modules" type="mods:ModulesType" /> -->
       </xs:sequence>
     </xs:complexType>  
   </xs:element>  
